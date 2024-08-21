@@ -1,4 +1,6 @@
-# 中国海洋大学 2024夏 移动软件开发
+<h1 align="center">
+    中国海洋大学 2024夏 移动软件开发
+</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/license-MIT-yellow">
