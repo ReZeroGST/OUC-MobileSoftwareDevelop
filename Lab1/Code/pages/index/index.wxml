@@ -1,0 +1,11 @@
+<!-- pages/index/index.wxml -->
+<view class='container'>
+  <!-- 显示头像图片 -->
+  <image src='{{src}}' class='imageStyle1'></image>
+  <!-- 显示昵称 -->
+  <text>{{nickName}}</text>
+  <!-- 按钮，用于选择头像 -->
+  <button open-type="chooseAvatar" bindchooseavatar="getMyInfo">点击获取头像</button>
+  <!-- 输入框，用于输入昵称 -->
+  <input type="text" placeholder="请输入昵称" bindinput="bindInput" />
+</view>
