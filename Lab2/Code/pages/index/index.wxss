@@ -1,0 +1,36 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.detail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0;
+}
+
+.box{
+  width: 33%;
+  text-align: center;
+}
+
+text{
+  font-size: 80rpx;
+  color: #3C5F81;
+}
