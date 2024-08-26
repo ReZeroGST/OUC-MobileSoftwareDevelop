@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "实验四：口述校史",
+    "navigationBarBackgroundColor": "#24A0ED"
   },
   "style": "v2",
   "componentFramework": "glass-easel",

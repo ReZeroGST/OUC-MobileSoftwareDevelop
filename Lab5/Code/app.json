@@ -1,12 +1,29 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/my/my",
+    "pages/detail/detail",    
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "第四个实验：高校新闻",
+    "navigationBarBackgroundColor": "#24A0ED"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/标签-首页.svg",
+      "selectedIconPath": "/images/标签-首页 (1).svg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/我的.svg",
+        "selectedIconPath": "/images/我的 (1).svg"
+      }
+  ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",

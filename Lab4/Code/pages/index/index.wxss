@@ -1,62 +1,57 @@
 /**index.wxss**/
-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.scrollarea {
-  flex: 1;
-  overflow-y: hidden;
-}
-
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
-  width: 80%;
-}
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.avatar-wrapper {
-  padding: 0;
-  width: 56px !important;
-  border-radius: 8px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.avatar {
-  display: block;
-  width: 56px;
-  height: 56px;
-}
-
-.nickname-wrapper {
-  display: flex;
+video{
   width: 100%;
-  padding: 16px;
-  box-sizing: border-box;
-  border-top: .5px solid rgba(0, 0, 0, 0.1);
-  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
-  color: black;
 }
 
-.nickname-label {
-  width: 105px;
+.danmuArea{
+  display: flex;
+  flex-direction: row;
 }
 
-.nickname-input {
-  flex: 1;
+input{
+  border: 1rpx solid #24A0ED;
+  height: 100rpx;
+  flex-grow: 1;
 }
+
+/* button{
+  color: white;
+  background-color: #24A0ED;
+  height: 100rpx;
+  text-align: center;
+} */
+
+.minibtn{
+  color: white;
+  background-color: #24A0ED;
+  height: 100rpx;
+  text-align: center;
+}
+
+.videoList{
+  width: 100%;
+  min-height: 400rpx;
+}
+
+.videoBar{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #24A0ED;
+  margin: 10rpx;
+}
+
+image{
+  width: 70rpx;
+  height: 70rpx;
+  margin: 20rpx;
+
+}
+
+text{
+  font-size: 45rpx;
+  color:  #24A0ED;
+  margin: 20rpx;
+  flex-grow: 1;
+}
+
