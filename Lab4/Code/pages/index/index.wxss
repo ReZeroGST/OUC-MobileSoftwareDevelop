@@ -14,12 +14,12 @@ input{
   flex-grow: 1;
 }
 
-/* button{
+button{
   color: white;
   background-color: #24A0ED;
-  height: 100rpx;
-  text-align: center;
-} */
+  /* height: 100rpx;
+  text-align: center; */
+}
 
 .minibtn{
   color: white;

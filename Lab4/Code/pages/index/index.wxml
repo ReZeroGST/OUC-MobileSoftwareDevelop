@@ -3,7 +3,7 @@
 <video id='myVideo' class="videoClass"  controls='true' src='{{src}}' enable-danmu="true" danmu-btn="true" autoplay="true" ></video>
 
 <!-- 第二个区域：弹幕区域 -->
-<view class="damuArea">
+<view class="danmuArea">
   <input type='text' placeholder='请输入弹幕内容' bindinput="getDanmu" value="{{danmuText}}"></input>
   <button class='minibtn' size='mini' bind:tap="sendDanmu">发送弹幕</button>
   <!-- <button bind:tap="sendDanmu">发送弹幕</button> -->
