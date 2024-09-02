@@ -1,66 +1,101 @@
 // pages/my/my.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    num: 0,
+    isLogin: false,
+    src: '',
+    nickName: '',
+    inputValue: '',
+    newsList: [] // 确保初始化
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  onChooseAvatar: function (e) {
+    const { avatarUrl } = e.detail;
+    this.setData({
+      src: avatarUrl,
+      isLogin: true
+    });
+    wx.setStorageSync('islogin', true);
+    this.getMyFavorites();
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  onNicknameBlur: function (e) {
+    const { value } = e.detail;
+    this.setData({
+      nickName: value,
+      inputValue: '' // 清空输入框
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  goLogout() {
+    wx.showModal({
+      title: '提示',
+      content: '您确定要退出登录吗',
+      success: (res) => {
+        if (res.confirm) {
+          console.log('用户点击确定');
+          wx.setStorageSync('islogin', false);
+          this.setData({
+            src: '',
+            nickName: '',
+            isLogin: false
+          });
+        } else {
+          console.log('用户点击取消');
+        }
+      }
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  getMyFavorites: function () {
+    let info = wx.getStorageInfoSync();
+    let keys = info.keys;
+    let num = keys.length - 1;
+    let myList = [];
+    for (var i = 0; i < num; i++) {
+      let obj = wx.getStorageSync(keys[i]);
+      myList.push(obj);
+    }
+    this.setData({
+      newsList: myList,
+      num: num
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
+  goToDetail: function (e) {
+    let id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../detail/detail?id=' + id,
+    });
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
+  onLoad(options) {},
 
+  onShow: function () {
+    if (this.data.isLogin) {
+      this.getMyFavorites();
+    }
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  // 新增方法处理取消收藏操作
+  onUnfavorite: function (e) {
+    const { id } = e.currentTarget.dataset;
+    wx.showModal({
+      title: '提示',
+      content: '您确定要取消收藏吗',
+      success: (res) => {
+        if (res.confirm) {
+          console.log('用户点击确定');
+          // 从存储中移除该项
+          wx.removeStorageSync(id);
+          // 更新收藏列表
+          this.getMyFavorites();
+          // 返回到“我的”页面
+          wx.navigateBack();
+        } else {
+          console.log('用户点击取消');
+        }
+      }
+    });
   }
-})
+});

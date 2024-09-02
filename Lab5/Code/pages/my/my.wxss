@@ -1,1 +1,76 @@
 /* pages/my/my.wxss */
+.myLogin {
+  background-color: #24A0ED;
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.myIcon {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.nickName {
+  color: white;
+}
+
+.myFavorites {
+  padding: 20rpx;
+}
+
+.myFavorites .shoucang {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: large;
+}
+
+.news-list {
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid gray;
+  position: relative; 
+}
+
+.list-item image {
+  width: 230rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-item text {
+  width: 100%;
+  line-height: 60rpx;
+  font-size: 10pt;
+}
+
+.unfavorite-btn {
+  flex: 1;
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  height: 50rpx;
+  width: 100rpx;
+  font-size: 10rpx;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5rpx;
+  padding: 5rpx 10rpx;
+}

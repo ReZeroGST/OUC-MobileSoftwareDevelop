@@ -3,5 +3,6 @@
   "projectname": "Lab4",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.5.6"
 }

@@ -1,1 +1,39 @@
 /* pages/index/index.wxss */
+/*2-1新闻列表容器*/
+#news-list {
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+/*2-2列表项目*/
+.list-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid gray;
+}
+/*2-3新闻图片*/
+.list-item image{
+  width:230rpx;
+  height: 150rpx;
+  /* width:100%;
+  height: auto; */
+  margin: 10rpx;
+}
+/*2-4新闻标题*/
+.list-item text{
+  width: 100%;
+  line-height: 60rpx;
+  font-size: 10pt;
+}
+
+/* 轮播图容器 */
+.swiper-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 轮播图图片 */
+.swiper-image {
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -60,7 +60,7 @@ OUCMobileSoftwareDevelop
 │  └─ 📁Report
 │     ├─ 📄实验报告4.md
 │     └─ 📄实验报告4.pdf
-├─ 📁Lab5（未完成）
+├─ 📁Lab5（已完成）
 │  ├─ 📁Code
 │  └─ 📁Report
 │     ├─ 📄实验报告5.md
