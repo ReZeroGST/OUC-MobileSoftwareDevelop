@@ -1,0 +1,27 @@
+<!--pages/game/game.wxml-->
+<view class="container">
+  <!-- 关卡提示 -->
+  <view class="title">第{{level}}关</view>
+  <!-- 游戏画布 -->
+  <canvas canvas-id="myCanvas"></canvas>
+
+  <!-- 方向键 -->
+  <view class="btnBox">
+    <button class="custom-btn" bindtap="up">↑</button>
+    <view>
+      <button class="custom-btn" bindtap='left'>←</button>
+      <button class="custom-btn" bindtap='down'>↓</button>
+      <button class="custom-btn" bindtap='right'>→</button>
+    </view>
+  </view>
+
+  <!-- 按钮容器 -->
+  <view class="button-container">
+    <!-- 上一关 -->
+    <button class="custom-btn {{level == 1 ? 'disabled-btn' : ''}}" bindtap="prevLevel" disabled="{{level == 1}}">上一关</button>
+    <!-- 重新开始 -->
+    <button class="custom-btn" bindtap="restartGame">重新开始</button>
+    <!-- 下一关 -->
+    <button class="custom-btn {{level == 4 ? 'disabled-btn' : ''}}" bindtap="nextLevel" disabled="{{level == 4}}">下一关</button>
+  </view>
+</view>

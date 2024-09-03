@@ -1,0 +1,53 @@
+/* pages/game/game.wxss */
+/* 游戏画布样式 */
+canvas {
+  border: 1rpx solid;
+  width: 320px;
+  height: 320px;
+}
+ 
+/* 方向键按钮整体区域 */
+.btnBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #24A0ED;
+}
+ 
+/* 方向键按钮第二行 */
+.btnBox view {
+  display: flex;
+  flex-direction: row;
+}
+ 
+/* 所有方向键按钮 */
+.btnBox button {
+  width: 90rpx;
+  height: 90rpx;
+}
+ 
+/* 所有按钮样式 */
+button {
+  margin: 10rpx;
+}
+ 
+/* 按钮容器样式 */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.custom-btn {
+  background-color: #24A0ED; /* 设置背景颜色 */
+  color: white; /* 设置文字颜色 */
+  border-radius: 10rpx; /* 设置圆角 */
+  padding: 10rpx 20rpx; /* 设置内边距 */
+}
+
+/* 禁用按钮样式 */
+.disabled-btn {
+  background-color: transparent;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
