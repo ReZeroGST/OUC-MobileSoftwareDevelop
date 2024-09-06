@@ -22,14 +22,15 @@
 
 ## 简介
 
-这是中国海洋大学2024学年夏季学期《移动软件开发》的学习仓库,包含了6个小实验和1个大实验的代码和实验报告。
+这是中国海洋大学2024学年夏季学期《移动软件开发》的学习仓库，包含了6个小实验的代码和实验报告。
 其中，每个实验包括Code和Report文件夹，Code存放对应的小程序代码，Report存放对应的markdown格式和pdf格式的实验报告。
 
-This is the learning repository for the ‘Mobile Software Develop’ course at Ocean University of China for the summer semester of the 2024 academic year. It contains the code and experiment reports for 6 small labs and 1 big lab.
+This is the learning repository for the ‘Mobile Software Develop’ course at Ocean University of China for the summer semester of the 2024 academic year. It contains the code and experiment reports for 6 small labs.
 Each experiment includes a Code folder and a Report folder. The Code folder contains the corresponding mini-program code, while the Report folder contains the experiment reports in both markdown and PDF formats.
 
-## 课程主页
 
+
+## 课程主页
 
 [移动软件开发课程主页(gitee.com)](https://gitee.com/gaopursuit/mobile_software#%E4%B8%AD%E5%9B%BD%E6%B5%B7%E6%B4%8B%E5%A4%A7%E5%AD%A6%E7%A7%BB%E5%8A%A8%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%AF%BE%E7%A8%8B "点击跳转")。
 
@@ -37,9 +38,6 @@ Each experiment includes a Code folder and a Report folder. The Code folder cont
 ## 目录结构
 ```
 OUCMobileSoftwareDevelop
-├─ 📁BigLab（未完成）
-│  ├─ 📁Code
-│  └─ 📁Report
 ├─ 📁Lab1（已完成）
 │  ├─ 📁Code
 │  └─ 📁Report
